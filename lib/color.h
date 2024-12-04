@@ -23,8 +23,6 @@
 #define BOLD_WHITE(text)  "\033[1;37m"text"\033[0m"
 
 
-#include <stdio.h>
-
 // Function prototypes for starting and stopping colors
 static inline void ASHU_RED() {
     printf("\033[0;31m");
