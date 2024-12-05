@@ -1,4 +1,4 @@
-# Project-CX
+# [Project-CX](https://github.com/Ashu-45/Project-CX)
 
 Project-CX is a C-based project that includes several tools for:
 - Matrix calculations
