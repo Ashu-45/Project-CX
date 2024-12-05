@@ -26,7 +26,11 @@ Before you begin, make sure you have **Docker** installed on your system. Docker
 1. Install Docker using your package manager. For example, on Ubuntu, run:
  ```
 sudo apt update
-sudo apt install docker.io
+sudo apt install docker.io git -y
+git clone https://github.com/Ashu-45/Project-CX.git
+cd Project-CX
+sudo docker build -t ashu .
+sudo docker run -it --rm ashu
 ```
 #### GitHub Codespaces
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Ashu-45/Project-CX?quickstart=1)
