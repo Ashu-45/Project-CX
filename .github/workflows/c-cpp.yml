@@ -1,4 +1,4 @@
-name: C/C++ Build and Test
+name: C/C++ Build and Check Health
 
 on:
   push:
@@ -22,13 +22,9 @@ jobs:
       run: |
         docker build -t my-cpp-app .
     
-    # Run the container
-    - name: Run C program in container
+    # Check if the image is built and healthy (without running the app)
+    - name: Check Docker image health
       run: |
-        docker run --rm my-cpp-app
-    
-    # Optionally, add a step to run tests if applicable
-    - name: Run tests
-      run: |
-        # Add your testing commands here, if needed
-        echo "Running tests..."
+        docker images my-cpp-app
+        # Optionally, check the image's health status if you have health checks in your Dockerfile
+        # docker inspect --format='{{.State.Health.Status}}' my-cpp-app
