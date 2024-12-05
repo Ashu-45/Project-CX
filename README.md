@@ -28,3 +28,20 @@ Before you begin, make sure you have **Docker** installed on your system. Docker
 sudo apt update
 sudo apt install docker.io
 ```
+
+## Project File Structure
+
+Here’s the file structure of the project:
+```
+├─ .gitignore
+├─ Dockerfile
+├─ README.md
+├─ home.c
+└─ pkg
+   ├─ calculator_v1.0.c
+   ├─ lib
+   │  ├─ ashu.h
+   │  └─ color.h
+   └─ matrix-calculator_v1.0.c
+```
+
