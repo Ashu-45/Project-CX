@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include "lib/color.h"
-#include "lib/ashu.h"
-#include "matrix-calculator_v1.0.c"
+#include "pkg/lib/color.h"
+#include "pkg/lib/ashu.h"
+#include "pkg/matrix-calculator_v1.0.c"
 
 int main(){
     me();
