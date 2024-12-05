@@ -32,7 +32,7 @@ cd Project-CX
 sudo docker build -t ashu .
 sudo docker run -it --rm ashu
 ```
-#### GitHub Codespaces
+#### On GitHub Codespaces:
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Ashu-45/Project-CX?quickstart=1)
 
 ## Project File Structure
