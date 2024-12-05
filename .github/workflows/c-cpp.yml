@@ -1,0 +1,34 @@
+name: C/C++ Build and Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    # Checkout the code
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    
+    # Set up Docker and build your image
+    - name: Set up Docker
+      run: |
+        docker build -t my-cpp-app .
+    
+    # Run the container
+    - name: Run C program in container
+      run: |
+        docker run --rm my-cpp-app
+    
+    # Optionally, add a step to run tests if applicable
+    - name: Run tests
+      run: |
+        # Add your testing commands here, if needed
+        echo "Running tests..."
