@@ -28,6 +28,8 @@ Before you begin, make sure you have **Docker** installed on your system. Docker
 sudo apt update
 sudo apt install docker.io
 ```
+#### GitHub Codespaces
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Ashu-45/Project-CX?quickstart=1)
 
 ## Project File Structure
 
