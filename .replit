@@ -1,0 +1,8 @@
+modules = ["c-clang14"]
+run = "gcc -o home home.c && ./home"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "gcc -o home home.c && ./home"]
