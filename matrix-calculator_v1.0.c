@@ -5,6 +5,7 @@
 
 void sum(){
     int m1,n1,m2,n2;
+    me();
     /*
     here m for row and n for column
     of our matric . :)
@@ -74,11 +75,13 @@ void sum(){
         ASHU_OFF();
         
     }
+ashu_exit();
 }
 
 
 void sub(){
     int m1,n1,m2,n2;
+    me();
     /*
     here m for row and n for column
     of our matric . :)
@@ -148,10 +151,12 @@ void sub(){
         ASHU_OFF();
         
     }
+ashu_exit();
 }
 
 int mult(){
     int m1,n1,m2,n2;
+    me();
     /*
     here m for row and n for column
     of our matric . :)
@@ -200,15 +205,16 @@ int mult(){
         printf("\nMatrix multiplication requires that the number of columns in the first matrix matches the number of rows in the second matrix\n");
         ASHU_OFF();
     }
-
+ashu_exit();
 }
 
 void ashu_matrix(){
     char XM_VAR;
+    me();
     printf("\n1> Sum of two matrices");
     printf("\n2> Subtraction of two matrices");
     printf("\n3> Multiplication of two matrices");
-    printf("\n\tCtrl+A");
+    // printf("\nCtrl+A");
     printf("\nEnter your choice: ");
     scanf("%c",&XM_VAR);
 
@@ -222,7 +228,7 @@ void ashu_matrix(){
         clrscr();
         mult();
     }else if(XM_VAR == 1){
-        break;
+        // break;
     }else {
         printf("\nPlease enter a correct option.\n");
         ashu_matrix();  
