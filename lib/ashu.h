@@ -6,7 +6,18 @@
 
 int getch(){getchar(); getchar();}
 
-
+void me(){
+    ASHU_BOLD_RED();
+    printf(" █████╗ ███████╗██╗  ██╗██╗   ██╗\n");
+    printf("██╔══██╗██╔════╝██║  ██║██║   ██║\n");
+    printf("███████║███████╗███████║██║   ██║\n");
+    printf("██╔══██║╚════██║██╔══██║██║   ██║\n");
+    printf("██║  ██║███████║██║  ██║╚██████╔╝\n");
+    printf("╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝\n");
+    ASHU_BLUE();
+    printf("welcome to my 1st version 1.0\n");
+    ASHU_OFF();
+}
 
 void clrscr() {
     // Use ANSI escape code to clear the screen and reset cursor position

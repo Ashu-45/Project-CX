@@ -2,6 +2,7 @@
 #include "lib/color.h"
 #include "lib/ashu.h"
 
+
 void sum(){
     int m1,n1,m2,n2;
     /*
@@ -202,26 +203,28 @@ int mult(){
 
 }
 
-void ashu(){
-    int XM_VAR;
+void ashu_matrix(){
+    char XM_VAR;
     printf("\n1> Sum of two matrices");
     printf("\n2> Subtraction of two matrices");
     printf("\n3> Multiplication of two matrices");
+    printf("\n\tCtrl+A");
     printf("\nEnter your choice: ");
-    scanf("%d",&XM_VAR);
+    scanf("%c",&XM_VAR);
 
-    if (XM_VAR == 1) {
+    if (XM_VAR == '1') {
         clrscr();
         sum();
-    } else if (XM_VAR == 2) {
+    } else if (XM_VAR == '2') {
         clrscr();
         sub();
-    } else if (XM_VAR == 3) {
+    } else if (XM_VAR == '3') {
         clrscr();
         mult();
-    } else {
+    }else if(XM_VAR == 1){
+        break;
+    }else {
         printf("\nPlease enter a correct option.\n");
-        ashu();  
+        ashu_matrix();  
     }
-    getch();
 }
