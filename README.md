@@ -1,9 +1,9 @@
 # [Project-CX](https://github.com/Ashu-45/Project-CX)
 
 Project-CX is a C-based project that includes several tools for:
+- 
 - Matrix calculations
 - EMI calculations
-- A mini bank system
 - Some utilities for coders
 
 The project is designed to run using Docker, with the necessary dependencies and setup already included in the Dockerfile.
