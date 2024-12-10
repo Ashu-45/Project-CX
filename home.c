@@ -5,8 +5,24 @@
 
 int main(){
     me();
-    int x_ashu;
+    char x_ashu;
+    printf("❏ 1 > Fro Normale Calculater\n");
+    printf("❏ 2 > For Matrix Calculater\n");
+    printf("❏ >> ");
+    scanf("%s",&x_ashu);
+
+    switch (x_ashu){
+        case '1':
+            main();
+            break;
+        case '2':
+            ashu_matrix();
+            break;
+        default:
+        printf("\nPlease enter a correct option.\n");
+        main();
+        break;
+    }
     
-    ashu_matrix();
 return 0;
 }

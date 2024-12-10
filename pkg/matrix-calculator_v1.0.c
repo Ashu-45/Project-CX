@@ -2,6 +2,8 @@
 #include "lib/color.h"
 #include "lib/ashu.h"
 
+int main();
+void ashu_matrix();
 
 void sum(){
     int m1,n1,m2,n2;
@@ -76,6 +78,7 @@ void sum(){
         
     }
 ashu_exit();
+ashu_matrix();
 }
 
 
@@ -152,6 +155,7 @@ void sub(){
         
     }
 ashu_exit();
+ashu_matrix();
 }
 
 int mult(){
@@ -206,31 +210,44 @@ int mult(){
         ASHU_OFF();
     }
 ashu_exit();
+ashu_matrix();
 }
+
+
+
 
 void ashu_matrix(){
     char XM_VAR;
     me();
-    printf("\n1> Sum of two matrices");
-    printf("\n2> Subtraction of two matrices");
-    printf("\n3> Multiplication of two matrices");
-    // printf("\nCtrl+A");
-    printf("\nEnter your choice: ");
+    printf("❏ 1> Sum of two matrices\n");
+    printf("❏ 2> Subtraction of two matrices\n");
+    printf("❏ 3> Multiplication of two matrices\n");
+    printf("❏ >> ");
     scanf("%c",&XM_VAR);
 
-    if (XM_VAR == '1') {
+switch (XM_VAR) {
+    case '1':
         clrscr();
         sum();
-    } else if (XM_VAR == '2') {
+        break;
+
+    case '2':
         clrscr();
         sub();
-    } else if (XM_VAR == '3') {
+        break;
+
+    case '3':
         clrscr();
         mult();
-    }else if(XM_VAR == 1){
-        // break;
-    }else {
+        break;
+    case 1:
+        main();
+        break;
+
+    default:
         printf("\nPlease enter a correct option.\n");
-        ashu_matrix();  
-    }
+        ashu_matrix();
+        break;
+}
+
 }
