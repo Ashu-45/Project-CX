@@ -3,3 +3,5 @@
 .vscode/settings.json
 a.out
 test.c
+.send.c
+bulid/*
