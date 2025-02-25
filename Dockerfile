@@ -1,10 +1,10 @@
 FROM ubuntu:24.04
 
-RUN apt update && apk add --no-cache \
+RUN apt update && apt-get install -y \
     gcc \
-    libc-dev \
+    libc6-dev \
     libcurl4-openssl-dev \
-    && rm -rf /var/cache/apk/*
+    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 COPY . /app/
