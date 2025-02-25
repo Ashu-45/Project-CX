@@ -6,7 +6,17 @@
 
 int getch(){getchar(); getchar();}
 
-
+int get_matrix(int arrayn, int arraym, float ARRAY[arrayn][arraym]){
+    int i,j;
+    printf("Enter the elements of the matrix: \n");
+    for(i=0;i<arrayn;i++){
+        for(j=0;j<arraym;j++){
+            printf("\n A(%d)(%d): ",i+1,j+1);
+            scanf("%f",&ARRAY[i][j]);
+        }
+    }
+    return 0;
+}
 
 void clrscr() {
     // Use ANSI escape code to clear the screen and reset cursor position
@@ -25,6 +35,10 @@ void ashu_exit(){
 void me(){
     clrscr();
     ASHU_BOLD_RED();
+    /*
+    THIS ALL ASCII CODE I GENERATE FROM HERE 
+    https://instafonts.io/font-changer
+    */
     printf(" █████╗ ███████╗██╗  ██╗██╗   ██╗\n");
     printf("██╔══██╗██╔════╝██║  ██║██║   ██║\n");
     printf("███████║███████╗███████║██║   ██║\n");

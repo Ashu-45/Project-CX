@@ -5,6 +5,8 @@
 int main();
 void ashu_matrix();
 
+
+
 void sum(){
     int m1,n1,m2,n2;
     me();
@@ -31,24 +33,8 @@ void sum(){
         */
         int i,j;
         ASHU_YELLOW();
-        printf("\nEnter The Value Of (a) Matrix\n");
-            for(i=0;i<m1;i++){
-                for(j=0;j<n1;j++){
-                printf("\n A(%d)(%d): ",i+1,j+1);
-                scanf("%f",&a[i][j]);
-                }
-            }
-        /*
-        this one for store all value of a
-        matrix one by one in a array
-        */
-        printf("\nEnter The Value Of (b) Matrix\n");
-            for(i=0;i<m2;i++){
-                for(j=0;j<n2;j++){
-                printf("\n B(%d)(%d): ",i+1,j+1);
-                scanf("%f",&b[i][j]);
-                }
-            }
+        get_matrix(m1,n1,a);
+        get_matrix(m2,n2,b);
         /*
         this one for store all value of b
         matrix one by one in b array
@@ -108,24 +94,12 @@ void sub(){
         */
         int i,j;
         ASHU_YELLOW();
-        printf("\nEnter The Value Of (a) Matrix\n");
-            for(i=0;i<m1;i++){
-                for(j=0;j<n1;j++){
-                printf("\n A(%d)(%d): ",i+1,j+1);
-                scanf("%f",&a[i][j]);
-                }
-            }
+        get_matrix(m1,n1,a);
         /*
         this one for store all value of a
         matrix one by one in a array
         */
-        printf("\nEnter The Value Of (b) Matrix\n");
-            for(i=0;i<m2;i++){
-                for(j=0;j<n2;j++){
-                printf("\n B(%d)(%d): ",i+1,j+1);
-                scanf("%f",&b[i][j]);
-                }
-            }
+        get_matrix(m2,n2,b);
         /*
         this one for store all value of b
         matrix one by one in b array
@@ -181,19 +155,9 @@ int mult(){
         int i,j,k; // i,j,k for loop
     //this one store the 1st matric
     ASHU_YELLOW();
-    for(i=0;i<m1;i++){
-        for(j=0;j<n1;j++){
-            printf("\nEnter a[%d][%d]",i+1,j+1);
-            scanf("%f",&a[i][j]);
-        }
-    }
+    get_matrix(m1,n1,a);
     // this one store the 2st matric
-    for(i=0;i<m2;i++){
-        for(j=0;j<n2;j++){
-            printf("\nEnter b[%d][%d]",i+1,j+1);
-            scanf("%f",&b[i][j]);
-        }
-    }
+    get_matrix(m2,n2,b);
     ASHU_GREEN();
     for(i=0;i<m1;i++){ // this one loop for row of c & a matric
         for(j=0;j<n2;j++){ // this one for column of c & b matric
@@ -219,10 +183,10 @@ ashu_matrix();
 void ashu_matrix(){
     char XM_VAR;
     me();
-    printf("❏ 1> Sum of two matrices\n");
-    printf("❏ 2> Subtraction of two matrices\n");
-    printf("❏ 3> Multiplication of two matrices\n");
-    printf("❏ >> ");
+    printf("1.Sum of two matrices\n");
+    printf("2.Subtraction of two matrices\n");
+    printf("3.Multiplication of two matrices\n");
+    printf(" >> ");
     scanf("%c",&XM_VAR);
 
 switch (XM_VAR) {
@@ -248,6 +212,5 @@ switch (XM_VAR) {
         printf("\nPlease enter a correct option.\n");
         ashu_matrix();
         break;
-}
 
-}
+}}

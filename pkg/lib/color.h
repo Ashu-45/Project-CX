@@ -3,7 +3,15 @@
 
 #include <stdio.h>
 
-// Macros for colored text with direct `printf` usage
+
+/*
+https://github.com/rxxuzi/Asmx/blob/ff7a6490e69ae4059eb2be765c4081c503734656/src/utils/console.h#L24C1-L31C46
+This Color Code I Take For Here 
+
+And All ANSI Escape Codes 
+https://gkarthiks.github.io/quick-commands-cheat-sheet/bash_command.html
+*/
+
 #define RED(text)    "\033[0;31m"text"\033[0m"
 #define GREEN(text)  "\033[0;32m"text"\033[0m"
 #define YELLOW(text) "\033[0;33m"text"\033[0m"
@@ -23,7 +31,6 @@
 #define BOLD_WHITE(text)  "\033[1;37m"text"\033[0m"
 
 
-// Function prototypes for starting and stopping colors
 static inline void ASHU_RED() {
     printf("\033[0;31m");
 }
