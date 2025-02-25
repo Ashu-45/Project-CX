@@ -39,15 +39,16 @@ sudo docker run -it --rm ashu
 
 Here’s the file structure of the project:
 ```
-├─ .gitignore
-├─ Dockerfile
-├─ README.md
-├─ home.c
-└─ pkg
-   ├─ calculator_v1.0.c
-   ├─ lib
-   │  ├─ ashu.h
-   │  └─ color.h
-   └─ matrix-calculator_v1.0.c
+.
+├── Dockerfile
+├── home.c
+├── LICENSE
+├── pkg
+│   ├── calculator_v1.0.c
+│   ├── lib
+│   │   ├── ashu.h
+│   │   └── color.h
+│   └── matrix-calculator_v1.0.c
+└── README.md
 ```
 

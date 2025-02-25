@@ -3,9 +3,7 @@ a.out
 test.c
 .send.c
 build/*
-test.*
-pkg/size_of_datatype's.c
+.bin/*
 bash_ashu.sh
 home
 tesx.c
-unlimated.c

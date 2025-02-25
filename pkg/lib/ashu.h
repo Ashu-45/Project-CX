@@ -46,7 +46,7 @@ void me(){
     printf("██║  ██║███████║██║  ██║╚██████╔╝\n");
     printf("╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝\n");
     ASHU_BLUE();
-    printf("\nWelcome To ASHU-45/PROJECT-CX version 1.0\n\n");
+    printf("\nWelcome To https://github.com/Ashu-45/Project-CX.git version 1.3\n\n");
     ASHU_OFF();
 }
 #endif
