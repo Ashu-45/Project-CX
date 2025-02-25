@@ -1,6 +1,6 @@
-FROM alpine:3.18
+FROM ubuntu:24.04
 
-RUN apk update && apk add --no-cache \
+RUN apt update && apk add --no-cache \
     gcc \
     libc-dev \
     libcurl4-openssl-dev \
